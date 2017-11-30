@@ -1,0 +1,587 @@
+
+#section-adv {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #747b84;
+    position: relative;
+}
+.topPart {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 130px);
+    overflow:hidden;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    bottom: 0;
+    overflow:hidden;
+}
+#section-adv .footer .skype-holder i, 
+#section-adv .foot-text .foot-holder span,
+#section-adv .foot-text .skype-holder a {
+    color: #394048;
+}
+.title {
+    position: absolute;
+    width: 50%;
+    height: 115px;
+    top:80px;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+.title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/advantages-title.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    opacity: 0.1;
+    animation: 3s titleAppearance ease;
+}
+@keyframes titleAppearance {
+    0% {
+        top: 200px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.description {
+    position: absolute;
+    width: 50%;
+    height: 115px;
+    top:80px;
+    right: 0;
+    background-color: #525860;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 2;
+    animation: 3s descriptAdv ease;
+}
+@keyframes descriptAdv {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0px;
+    }
+}
+.description p {
+    font-size: 14px;
+    font-family: RobotoLight, sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+}
+.cardBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 195px);
+    box-sizing: border-box;
+}
+.card {
+    height: 33.3333333%;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+}
+.card1 {
+    background-color: #f54657;
+}
+.card2{
+    background-color: #394048;
+}
+.card3{
+    background-color: #a8c61e;
+}
+.card4{
+    background-color: #12c5c7;
+}
+.card5{
+    background-color: #a8c61e;
+}
+.card6{
+    background-color: #12c5c7;
+}
+.card7{
+    background-color: #394048;
+}
+.card8{
+    background-color: #f54657;
+}
+.card9{
+    background-color: #394048;
+}
+.card10{
+    background-color: #f54657;
+}
+.card11{
+    background-color: #12c5c7;
+}
+.card12{
+    background-color: #a8c61e;
+}
+.cardWrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 16%;
+}
+.cardWrap .decor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33px;
+    width: 3px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .decor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -33px;
+    width: 33px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.cardWrap .text {
+    padding-left: 60px;
+    padding-right: 25px;
+}
+.cardWrap .text h3 {
+    font-size: 18px;
+    font-family: Bicubik, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 20px;
+}
+.cardWrap .text p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: RobotoMedium, sans-serif;
+    color: #fff;
+    font-weight: 50;
+}
+.order {
+    width: 200px;
+    height: 80px;
+    box-sizing: border-box;
+}
+.divider {
+    background-color: #394048;
+}
+.skype-holder i {
+    font-size: 20px;
+}
+
+@media all and (max-height: 900px)   {
+    .topPart {
+        height: 860px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .foot-text {
+        width: 865px;
+    }
+    .skype-holder {
+        font-size: 12px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 1350px) {
+    .phones {
+        padding-top: 30px;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .foot-text {
+        bottom: 40px;
+        display: flex;
+        height: 30px;
+        align-items: center;
+    }
+    .title {
+        width: 52%;
+    }
+    .description {
+        width: calc(50% - 200px);
+        right: auto;
+        left: 50%;
+        padding: 25px;
+    }
+    .description p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    @keyframes descriptAdv {
+        0% {
+            left: 200%;
+        }
+        100% {
+            left: 50%;
+        }
+    }
+    .cardWrap .text h3 {
+        font-size: 14px;
+    }
+    .card {
+        min-height: 270px;
+    }
+    .cardWrap {
+        margin-top: 75px;
+    }
+    .topPart {
+        height: 1000px;
+    }
+}
+
+@media all and (max-height: 900px) and (max-width: 1280px)  {
+    .topPart {
+        height: 1000px;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .policy-links {
+        bottom: 10px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    .topPart {
+        height: 1100px;
+    }
+    .card {
+        height: 25%;
+        min-height: 200px;
+    }
+    .card6{
+        background-color: #394048;
+    }
+    .card7{
+        background-color: #394048;
+    }
+    .card8{
+        background-color: #f54657;
+    }
+    .card9{
+        background-color: #12c5c7;
+    }
+    .card10{
+        background-color: #f54657;
+    }
+    .card11{
+        background-color: #12c5c7;
+    }
+    .card12{
+        background-color: #a8c61e;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .policy-links a {
+        font-size: 8px;
+    }
+    .policy-links {
+        bottom: 15px;
+        right: 20px;
+        width: 640px;
+    }
+    .foot-text {
+        bottom: 40px;
+        height: 20px;
+        right: 20px;
+    }
+    .mail-order {
+        left: 80px;
+    }
+    .description {
+        width: 100%;
+        left: 0;
+        top: 190px;
+        height: 65px;
+        padding-top: 15px;
+    }
+    @keyframes descriptAdv {
+        0% {
+            left: 200%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    .topPart {
+        height: 1055px;
+    }
+    .cardBox {
+        height: calc(100% - 255px);
+    }
+    .title {
+        width: 67%;
+        height: 110px;
+    }
+    .cardWrap {
+        margin-top: 60px;
+    }
+    .cardWrap .text h3 {
+        margin-bottom: 10px;
+    }
+    .card {
+        min-height:200px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .topPart {
+        height: 1300px;
+    }
+    .col-sm-6 {
+        width: 33.3333333%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .title {
+        width: 80%;
+        height: 80px;
+    }
+    .description {
+        top: 160px;
+    }
+    .cardBox {
+        height: calc(100% - 225px);
+    }
+    .card {
+        min-height: 260px;
+    }
+    .topPart {
+        height: 1265px;
+    }
+    .mail-order {
+        left: 20px;
+    }
+    .footer .foot-text {
+        bottom: 50px;
+        width: 435px;
+    }
+    .policy-links {
+        display: block;
+        text-align:right;
+        bottom: 30px;
+    }
+    .policy-links a:nth-child(3) {
+        display: block;
+        line-height: 20px;
+    }
+    .phones {
+        padding-top: 15px;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .policy-links {
+        height: 40px;
+        bottom: 20px;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .topPart {
+        height: 1495px;
+    }
+    .card {
+        min-height: 210px;
+        height: 16.6666667%;
+    }
+    .title {
+        height: 70px;
+    }
+    .description {
+        top: 150px;
+        height: 85px;
+    }
+    .cardBox {
+        height: calc(100% - 235px);
+    }
+    .cardWrap {
+        margin-top: 55px;
+    }
+    .mail-order {
+        left: 0px;
+    }
+    .policy-links {
+        width: calc(100% - 40px);
+        bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+    .policy-links a {
+        letter-spacing: 1px;
+    }
+    .policy-links a:nth-child(3) {
+        line-height: 10px;
+    }
+    .footer .foot-text {
+        bottom: 15px;
+        width: 310px;
+    }
+    .skype-holder {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .foot-text .foot-holder span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .card3{
+        background-color: #a8c61e;
+    }
+    .card4{
+        background-color: #12c5c7;
+    }
+    .card5{
+        background-color: #394048;
+    }
+    .card6{
+        background-color: #a8c61e;
+    }
+    .card7{
+        background-color: #12c5c7;
+    }
+    .card8{
+        background-color: #f54657;
+    }
+    .card9{
+        background-color: #a8c61e;
+    }
+    .card10{
+        background-color: #12c5c7;
+    }
+    .card11{
+        background-color: #f54657;
+    }
+    .card12{
+        background-color: #394048;
+    }
+}
+
+@media all and (max-width: 520px) {
+    .col-sm-6 {
+        width: 100%;
+    }
+    .order {
+        font-size: 8px;
+    }
+    .title {
+        width: 100%;
+    }
+    .description {
+        height: 135px;
+        padding-top: 25px;
+    }
+    .description p {
+        font-size: 10px;
+    }
+    .topPart {
+        height: 2300px;
+    }
+    .cardBox {
+        height: calc(100% - 285px);
+    }
+    .card {
+        height: 8.3333333%;
+        min-height: 145px;
+    }
+    .cardWrap {
+        margin-top: 30px;
+    }
+    .cardWrap .text h3 {
+        font-size: 14px;
+    }
+    .cardWrap .text p {
+        font-size: 14px;
+    }
+    button.order {
+        width: 85px;
+        height: 60px;
+        box-sizing: border-box;
+        padding: 25px 0;
+    }
+    .footer .foot-text {
+        bottom:53px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        padding: 0;
+    }
+    .policy-links {;
+        bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .skype-holder a {
+        margin-left: 5px;
+    }
+    .card3{
+        background-color: #a8c61e;
+    }
+    .card4{
+        background-color: #12c5c7;
+    }
+    .card5{
+        background-color: #f54657;
+    }
+    .card6{
+        background-color: #394048;
+    }
+    .card7{
+        background-color: #a8c61e;
+    }
+    .card8{
+        background-color: #12c5c7;
+    }
+    .card9{
+        background-color: #f54657;
+    }
+    .card10{
+        background-color: #394048;
+    }
+    .card11{
+        background-color: #a8c61e;
+    }
+    .card12{
+        background-color: #12c5c7;
+    }
+}
+
+
