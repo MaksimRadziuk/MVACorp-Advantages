@@ -28,29 +28,29 @@
 .title {
     position: absolute;
     width: 50%;
-    height: 115px;
-    top:80px;
+    height: 82px;
+    top:115px;
     left: 0;
     z-index: 3;
     overflow: hidden;
 }
-.title:before {
-    content: '';
+.title h1 {
     display: block;
     position: absolute;
     left: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/advantages-title.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 100%;
+    font-size: 5vw;
+    color: #fff;
+    font-family: Bicubik;
+    margin: 0;
     opacity: 0.1;
     animation: 3s titleAppearance ease;
 }
 @keyframes titleAppearance {
     0% {
-        top: 200px;
+        top: 150px;
     }
     100% {
         top: 0px;
@@ -198,13 +198,23 @@
 .skype-holder i {
     font-size: 20px;
 }
-
+@media all and (max-width: 1680px) {
+    .title {
+        top: 120px;
+        height: 75px;
+    }
+}
 @media all and (max-height: 900px)   {
     .topPart {
         height: 860px;
     }
 }
-
+@media all and (max-width: 1440px) {
+    .title {
+        top: 130px;
+        height: 70px;
+    }
+}
 @media all and (max-width: 1366px) {
     .foot-text {
         width: 865px;
@@ -214,6 +224,9 @@
     }
     .foot-text .foot-holder span {
         font-size: 12px;
+    }
+    .title {
+        height: 63px;
     }
 }
 
@@ -232,6 +245,7 @@
     }
     .title {
         width: 52%;
+        top: 135px;
     }
     .description {
         width: calc(50% - 200px);
@@ -348,7 +362,11 @@
     }
     .title {
         width: 67%;
-        height: 110px;
+        height: 63px;
+        top: 125px;
+    }
+    .title h1 {
+        font-size: 6.5vw;
     }
     .cardWrap {
         margin-top: 60px;
@@ -373,7 +391,8 @@
 @media all and (max-width: 768px) {
     .title {
         width: 80%;
-        height: 80px;
+        height: 50px;
+        top: 112px;
     }
     .description {
         top: 160px;
@@ -504,6 +523,7 @@
     }
     .title {
         width: 100%;
+        height: 50px;
     }
     .description {
         height: 135px;
@@ -516,7 +536,7 @@
         height: 2300px;
     }
     .cardBox {
-        height: calc(100% - 285px);
+        height: calc(100% - 295px);
     }
     .card {
         height: 8.3333333%;
@@ -582,6 +602,22 @@
     .card12{
         background-color: #12c5c7;
     }
+    .title h1 {
+        font-size: 10vw;
+    }
+    .description {
+        top: 160px;
+    }
 }
-
-
+@media all and (max-width: 420px) {
+    .title {
+        height: 40px;
+        top: 120px;
+    }
+}
+@media all and (max-width: 360px) {
+    .title {
+        height: 30px;
+        top: 128px;
+    }
+}
